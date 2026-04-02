@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-69WJWXER6M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aastha Malla | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 
-  gtag('config', 'G-69WJWXER6M');
-</script>
+    
 
 </head>
 <body>
-    <h1>Aastha Malla</h1>
-    <p>Hello! I am a student interested in web development and e-commerce.</p>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Shopify</li>
-    </ul>
+    <!-- Navbar -->
+    <nav>
+        <h2>NOCTRA</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <h2>Contact</h2>
-    <p>Email: aastha@gmail.com</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Hi, I'm Aastha 👋</h1>
+        <p>Web Developer | Shopify Enthusiast | Creative Designer</p>
+        <button onclick="scrollToSection('contact')">Contact Me</button>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="cards">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Shopify</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Email: aastha@example.com</p>
+    </section>
+
+    <footer>
+        <p>© 2026 NOCTRA | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
