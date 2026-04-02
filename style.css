@@ -10,25 +10,33 @@ body {
     color: white;
 }
 
-
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 20px 40px;
     background: #111;
 }
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 30px; /* spacing between items */
+    list-style: none; /* removes bullets */
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
+nav a:hover {
+    color: #aaa;
+}
 
+/* Hero */
 .hero {
     height: 90vh;
     display: flex;
@@ -40,7 +48,18 @@ nav a {
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 42px;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+.subtext {
+    margin-top: 10px;
+    max-width: 600px;
+    font-size: 14px;
+    color: #ccc;
 }
 
 .hero button {
@@ -52,13 +71,13 @@ nav a {
     cursor: pointer;
 }
 
-
+/* Sections */
 .section {
     padding: 60px;
     text-align: center;
 }
 
-
+/* Cards */
 .cards {
     display: flex;
     justify-content: center;
@@ -77,7 +96,7 @@ nav a {
     transform: scale(1.1);
 }
 
-
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
